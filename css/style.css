@@ -140,6 +140,7 @@ nav.custom_nav.ScrollDown {
       border-color: #fff; }
 
 header.jumbotron {
+  background-image: url(../images/hands-coffee-smartphone-technology.jpg);
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
@@ -163,6 +164,7 @@ section#sectionIntro {
   section#sectionIntro .container {
     padding: 80px 0px; }
     section#sectionIntro .container .col-sm-5 {
+      background-image: url(../images/GPO_Inland_letter_office_ILN_1845.jpg);
       background-size: cover;
       mix-blend-mode: hard-light;
       height: 300px;
@@ -196,6 +198,7 @@ section#sectionEffect .container-fluid {
   font-weight: 200;
   text-align: center; }
   section#sectionEffect .container-fluid .col-sm-5 {
+    background-image: url(../images/grid-globe-background.jpg);
     background-size: 220%;
     height: 550px; }
   section#sectionEffect .container-fluid .col-sm-7 {
@@ -214,6 +217,7 @@ section#sectionFuture .container .col-md-12 {
   padding-top: 70px; }
 
 section#sectionFuture .container .col-sm-5 {
+  background-image: url(../images/Skinput_arm_buttons.jpg);
   height: 340px;
   background-size: cover;
   background-position: center bottom;
@@ -234,6 +238,7 @@ section#sectionFuture .container .col-sm-7 {
     margin-bottom: 20px; }
 
 footer.jumbotron {
+  background-image: url(../images/hands-coffee-smartphone-technology.jpg);
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
