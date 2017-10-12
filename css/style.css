@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+  position: relative; }
+
+body {
+  overflow-x: hidden; }
+
+ul.nav.navbar-nav.custom_navbar li a {
+  color: white;
+  font-weight: 500; }
+
+nav.custom_nav {
+  background-color: transparent;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  nav.custom_nav .navbar-header {
+    padding: 5px; }
+    nav.custom_nav .navbar-header .navbar-brand {
+      font-family: 'Cuprum', sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      padding: 20px 0px 20px 40px;
+      color: #EE6E36;
+      cursor: pointer;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); }
+      nav.custom_nav .navbar-header .navbar-brand:hover {
+        color: #de5113; }
+    nav.custom_nav .navbar-header .custom_navbar-toggle {
+      right: 0;
+      top: 0;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      display: none; }
+      nav.custom_nav .navbar-header .custom_navbar-toggle span {
+        width: 35px;
+        border-bottom: 3px solid white;
+        border-radius: 3px;
+        position: absolute;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+        transform-origin: left center; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle span:nth-child(1) {
+          top: 25%; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle span:nth-child(2) {
+          top: 50%; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle span:nth-child(3) {
+          top: 75%; }
+      nav.custom_nav .navbar-header .custom_navbar-toggle:hover {
+        background-color: #FFF; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle:hover span {
+          border-bottom: 3px solid #EE6E36; }
+      nav.custom_nav .navbar-header .custom_navbar-toggle.toggle_open {
+        background-color: #FFF; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle.toggle_open span:nth-child(2) {
+          opacity: 0; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle.toggle_open span:nth-child(1) {
+          -webkit-transform: translate(-35%, -50%) rotate(45deg);
+          -ms-transform: translate(-35%, -50%) rotate(45deg);
+          transform: translate(-35%, -50%) rotate(45deg);
+          width: 42px;
+          border-color: #EE6E36; }
+        nav.custom_nav .navbar-header .custom_navbar-toggle.toggle_open span:nth-child(3) {
+          -webkit-transform: translate(-35%, -50%) rotate(-45deg);
+          -ms-transform: translate(-35%, -50%) rotate(-45deg);
+          transform: translate(-35%, -50%) rotate(-45deg);
+          width: 42px;
+          border-color: #EE6E36; }
+      @media screen and (max-width: 768px) {
+        nav.custom_nav .navbar-header .custom_navbar-toggle {
+          display: block; } }
+  nav.custom_nav ul.nav.navbar-nav.custom_navbar {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    line-height: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+    nav.custom_nav ul.nav.navbar-nav.custom_navbar a {
+      padding: 20px 40px 20px 40px;
+      display: block; }
+      nav.custom_nav ul.nav.navbar-nav.custom_navbar a:hover {
+        color: #EE6E36; }
+    @media screen and (max-width: 768px) {
+      nav.custom_nav ul.nav.navbar-nav.custom_navbar {
+        height: 100vh;
+        top: 60px;
+        right: 0;
+        margin: 0;
+        background-color: white;
+        text-shadow: none;
+        -webkit-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%); }
+        nav.custom_nav ul.nav.navbar-nav.custom_navbar a {
+          padding: 20px 40px 20px 40px;
+          color: #EE6E36; }
+          nav.custom_nav ul.nav.navbar-nav.custom_navbar a:hover {
+            background-color: #EE6E36;
+            color: #fff; } }
+    nav.custom_nav ul.nav.navbar-nav.custom_navbar.toggle_open {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0); }
+
+nav.custom_nav.ScrollDown {
+  background-color: #FFF; }
+  nav.custom_nav.ScrollDown ul.nav.navbar-nav.custom_navbar {
+    text-shadow: none; }
+    nav.custom_nav.ScrollDown ul.nav.navbar-nav.custom_navbar a {
+      color: #EE6E36; }
+      nav.custom_nav.ScrollDown ul.nav.navbar-nav.custom_navbar a:hover {
+        background-color: #EE6E36;
+        color: #fff; }
+  nav.custom_nav.ScrollDown .custom_navbar-toggle span {
+    border-color: #EE6E36; }
+  nav.custom_nav.ScrollDown .custom_navbar-toggle:hover {
+    background-color: #EE6E36; }
+    nav.custom_nav.ScrollDown .custom_navbar-toggle:hover span {
+      border-color: #fff; }
+  nav.custom_nav.ScrollDown .custom_navbar-toggle.toggle_open:hover {
+    background-color: #EE6E36; }
+    nav.custom_nav.ScrollDown .custom_navbar-toggle.toggle_open:hover span {
+      border-color: #fff; }
+
+header.jumbotron {
+  background-image: url(https://static.pexels.com/photos/4831/hands-coffee-smartphone-technology.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  margin: 0px; }
+  header.jumbotron .container {
+    color: white;
+    padding: 200px 0px;
+    text-align: center; }
+    header.jumbotron .container h1 {
+      font-size: 50px;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); }
+    header.jumbotron .container hr {
+      width: 50px;
+      border: 3px solid #EE6E36; }
+    header.jumbotron .container p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7); }
+
+section#sectionIntro {
+  background-color: #EE6E36; }
+  section#sectionIntro .container {
+    padding: 80px 0px; }
+    section#sectionIntro .container .col-sm-5 {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/31/GPO_Inland_letter_office_ILN_1845.jpg);
+      background-size: cover;
+      mix-blend-mode: hard-light;
+      height: 300px;
+      margin: 0px;
+      padding: 0px; }
+    section#sectionIntro .container .col-sm-7 {
+      padding: 30px 50px;
+      margin-top: 5%; }
+      section#sectionIntro .container .col-sm-7 h2 {
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 35px; }
+
+section#sectionAbout .container {
+  padding-top: 50px; }
+  section#sectionAbout .container .col-xs-12 {
+    padding-top: 20px; }
+  section#sectionAbout .container .col-md-4 {
+    margin-bottom: 50px; }
+    section#sectionAbout .container .col-md-4 .imgWrap {
+      width: 100%;
+      height: 180px;
+      overflow: hidden; }
+      section#sectionAbout .container .col-md-4 .imgWrap img {
+        width: 100%; }
+    section#sectionAbout .container .col-md-4 p {
+      font-weight: 300; }
+
+section#sectionEffect .container-fluid {
+  background-color: #2F2F31;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 200;
+  text-align: center; }
+  section#sectionEffect .container-fluid .col-sm-5 {
+    background-image: url(http://www.publicdomainpictures.net/pictures/90000/velka/grid-globe-background.jpg);
+    background-size: 220%;
+    height: 550px; }
+  section#sectionEffect .container-fluid .col-sm-7 {
+    padding: 30px;
+    padding-top: 120px; }
+    section#sectionEffect .container-fluid .col-sm-7 .col-xs-4 i {
+      font-size: 40px; }
+    section#sectionEffect .container-fluid .col-sm-7 .col-xs-4 h2 {
+      font-weight: 500; }
+    section#sectionEffect .container-fluid .col-sm-7 .col-xs-4 h4 {
+      font-weight: 400; }
+    section#sectionEffect .container-fluid .col-sm-7 .col-sm-12 {
+      margin-top: 15px; }
+
+section#sectionFuture .container .col-md-12 {
+  padding-top: 70px; }
+
+section#sectionFuture .container .col-sm-5 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/a/ae/Skinput_arm_buttons.JPG);
+  height: 340px;
+  background-size: cover;
+  background-position: center bottom;
+  margin-top: 20px; }
+
+section#sectionFuture .container .col-sm-7 {
+  padding: 20px;
+  padding-bottom: 70px;
+  vertical-align: bottom; }
+  section#sectionFuture .container .col-sm-7 i {
+    font-size: 40px;
+    margin-bottom: 10px; }
+    section#sectionFuture .container .col-sm-7 i span {
+      font-size: 20px;
+      font-weight: 900;
+      vertical-align: middle; }
+  section#sectionFuture .container .col-sm-7 p {
+    margin-bottom: 20px; }
+
+footer.jumbotron {
+  background-image: url(https://static.pexels.com/photos/4831/hands-coffee-smartphone-technology.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  margin-top: 5%; }
+  footer.jumbotron .container {
+    color: white;
+    padding: 40px 0px;
+    text-align: center; }
+    footer.jumbotron .container h2 {
+      margin-bottom: 20px; }
+    footer.jumbotron .container input {
+      max-width: 400px;
+      margin: 0px auto;
+      text-align: center;
+      background-color: transparent;
+      color: white; }
+    footer.jumbotron .container hr {
+      width: 50px;
+      border: 3px solid #EE6E36; }
+    footer.jumbotron .container .btn-warning {
+      background-color: #EE6E36;
+      border: 1px solid #f29065; }
+      footer.jumbotron .container .btn-warning:hover {
+        background-color: white;
+        color: #EE6E36; }
